@@ -179,7 +179,7 @@ export class Envs {
     return {
       vodAllowedPlatforms: this.VOD_ALLOWED_PLATFORMS,
       allowedPlatforms: this.ALLOWED_PLATFORMS,
-      token: this.get('TOKEN', '87654321', 'string', true), // token，默认为87654321
+      token: this.get('TOKEN', '2014209720', 'string', true), // token，默认为87654321
       otherServer: this.get('OTHER_SERVER', 'https://api.danmu.icu', 'string'), // 第三方弹幕服务器
       vodServers: this.resolveVodServers(env), // vod站点配置，格式：名称@URL,名称@URL
       vodReturnMode: this.get('VOD_RETURN_MODE', 'fastest', 'string').toLowerCase(), // vod返回模式：all（所有站点）或 fastest（最快的站点）
